@@ -1,0 +1,233 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:black;
+
+}
+
+.announcement-bar{
+
+    height:42px;
+
+    background:black;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:700;
+
+    font-size:14px;
+
+    letter-spacing:.5px;
+
+}
+
+.utility-bar{
+
+    height:40px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    font-size:14px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.utility-links{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.main-header{
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 35px;
+
+    border-bottom:1px solid #e5e5e5;
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+}
+
+.logo img{
+
+    width:70px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:40px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+.header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.search-box{
+
+    width:260px;
+
+    height:42px;
+
+    background:#eceff1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 15px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+}
+
+.icon{
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.icon:hover{
+
+    transform:scale(1.15);
+
+}
+
+@media(max-width:992px){
+
+.main-header{
+
+flex-wrap:wrap;
+
+height:auto;
+
+padding:20px;
+
+}
+
+nav{
+
+width:100%;
+
+justify-content:center;
+
+margin-top:20px;
+
+gap:25px;
+
+}
+
+.search-box{
+
+width:180px;
+
+}
+
+.utility-bar{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+display:none;
+
+}
+
+.search-box{
+
+display:none;
+
+}
+
+.main-header{
+
+justify-content:space-between;
+
+}
+
+.logo img{
+
+width:60px;
+
+}
+
+}
