@@ -1,0 +1,102 @@
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f5f5f7;
+  --text-h: #0e0e12;
+  --text: #4c4c55;
+  --border: #e4e4e8;
+  --primary: #0e0e12;
+  --accent: #d1273d;
+  --accent-bg: rgba(209, 39, 61, 0.08);
+  --radius: 14px;
+  --shadow-sm: rgba(15, 15, 20, 0.06) 0 2px 8px -2px;
+  --shadow: rgba(15, 15, 20, 0.14) 0 12px 28px -10px;
+  --font: 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --bg: #101014;
+  --bg-subtle: #18181e;
+  --text-h: #f5f5f7;
+  --text: #b4b4bd;
+  --border: #2a2a32;
+  --primary: #f5f5f7;
+  --accent-bg: rgba(209, 39, 61, 0.18);
+  --shadow-sm: rgba(0, 0, 0, 0.4) 0 2px 8px -2px;
+  --shadow: rgba(0, 0, 0, 0.55) 0 16px 32px -12px;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-h);
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.btn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 14px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--bg);
+}
+.btn-primary:hover { opacity: 0.88; }
+
+.btn-outline {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text-h);
+}
+.btn-outline:hover { border-color: var(--text-h); }
+
+.btn-icon {
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-h);
+}
+.btn-icon:hover { border-color: var(--text-h); }
